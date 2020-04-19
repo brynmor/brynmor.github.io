@@ -1,7 +1,7 @@
 # Setup
 title:               My personal website
 tagline:             'Educate | Agitate | Organise'
-description:         'A personal website for saving and sharing things I've learned.'
+description:         'A personal website for saving and sharing things I have learned.'
 url:                 ''
 baseurl:             ''
 paginate:            5
