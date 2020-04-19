@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Lists
+title: Collections
 ---
 
 
-Lists of things that I want to remember
+## Lists of things that I want to remember
 
 - [The best alcohol free beers](list_1.md)
