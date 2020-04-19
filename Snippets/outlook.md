@@ -6,7 +6,10 @@ title: Things I've learned about Office 365 and Outlook
 
 
 Compose calendar event:
-``https://outlook.office.com/owa/?viewmodel=IComposeCalendarItemViewModelFactory&wid=45&ispopout=1&path=``
+<p class="message">
+https://outlook.office.com/owa/?viewmodel=IComposeCalendarItemViewModelFactory&wid=45&ispopout=1&path=
+</p>
+
 
 
 URL shortcut in iOS:
