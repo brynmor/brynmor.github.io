@@ -5,15 +5,15 @@ John Morgan
 Will and Annie
 
 
-Skies have melted,\n
-Waterfalls assembled\n
-Scattered moisture,\n
-Afon Machno flowed away\n
-Many times round the earth.\n
+Skies have melted,
+Waterfalls assembled
+Scattered moisture,
+Afon Machno flowed away
+Many times round the earth.
 
-From their back gate\n
-They waved goodbye\n
-To the departing river.\n
+From their back gate
+They waved goodbye
+To the departing river.
 
 One way out of the valley\n
 For the slate harvest,\n
