@@ -5,49 +5,49 @@ John Morgan
 Will and Annie
 
 
-Skies have melted,
-Waterfalls assembled
-Scattered moisture,
-Afon Machno flowed away
-Many times round the earth.
+Skies have melted,<br>
+Waterfalls assembled<br>
+Scattered moisture,<br>
+Afon Machno flowed away<br>
+Many times round the earth.<br>
 
-From their back gate
-They waved goodbye
-To the departing river.
+From their back gate<br>
+They waved goodbye<br>
+To the departing river.<br>
 
-One way out of the valley\n
-For the slate harvest,\n
-Lambs to the slaughter,\n
-And Sunday's preacher from Llanrwst.\n
+One way out of the valley<br>
+For the slate harvest,<br>
+Lambs to the slaughter,<br>
+And Sunday's preacher from Llanrwst.<br>
 
-I called one afternoon\n
-The first Sunday\n
-After summer time,\n
-Rain swept in from the coast,\n
-Cloud sealed the valley\n
-Till their kitchen was dark,\n
-And the radio played hymns\n
-Or ghosts of hymns.\n
+I called one afternoon<br>
+The first Sunday<br>
+After summer time,<br>
+Rain swept in from the coast,<br>
+Cloud sealed the valley<br>
+Till their kitchen was dark,<br>
+And the radio played hymns<br>
+Or ghosts of hymns.<br>
 
-The tunnel of their winter\n
-Meant pockets of warmth\n
-The workshop, the chapel brazier,\n
-Big kettle on the fire\n
-Timed for a nightcap\n
-And stone hot water bottles.\n
+The tunnel of their winter<br>
+Meant pockets of warmth<br>
+The workshop, the chapel brazier,<br>
+Big kettle on the fire<br>
+Timed for a nightcap<br>
+And stone hot water bottles.<br>
 
-He would pass through\n
-Wall after wall\n
-Of dark mornings\n
-To chisel boulders\n
-With a sesame touch\n
-That sent slate along the valley\n
-Dust down his lungs.\n
+He would pass through<br>
+Wall after wall<br>
+Of dark mornings<br>
+To chisel boulders<br>
+With a sesame touch<br>
+That sent slate along the valley<br>
+Dust down his lungs.<br>
 
-One way out of the valley\n
-The railway tried once\n
-To blast a tunnel\n
+One way out of the valley<br>
+The railway tried once<br>
+To blast a tunnel<br>
 
-The track was never laid.\n
-Their line ended too.\n
-They did not trouble the tenth commandment\n
+The track was never laid.<br>
+Their line ended too.<br>
+They did not trouble the tenth commandment<br>
