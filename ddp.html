@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brexit briefings</title>
+<style type="text/css">
+.card {
+	margin-bottom: 33pt;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11pt;
+}
+
+.title {
+	margin-bottom: 6pt;
+}
+
+.title a {
+	font-weight: bold;
+	color: #36845B;
+	text-decoration: none;
+}
+
+.title a:hover {
+	text-decoration: underline;
+}
+
+.date {
+	margin-bottom: 6pt;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #A0A0A0;
+}
+
+.description {
+	line-height: 1.5;
+}
+
+p {
+	margin: 0;
+}
+
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+function dos10(a1) {
+window.open('ddp.html?search=' + a1,   'a1window');
+}
+
+      </script>
+  <form onsubmit="dos10(this.a1.value); return false;">
+    <input type="text" name="a1" size="20" placeholder="Name" />
+            <input type="submit" value="Submit" />
+    Briefing paper title<br />
+    <br />
+  </form>
+
+
+<script type="text/javascript">
+
+function getParameterByName(name, url) {
+
+	if (!url) {
+		url = window.location.href;
+	}
+
+	name = name.replace(/[\[\]]/g, "\\$&");
+
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+
+	if (!results) return null;
+	if (!results[2]) return '';
+
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Converts a datetime string returned by the API to a formatted date.
+function convertDatetime(datetimeString) {
+
+	var dateComponents = datetimeString.substring(0,10).split("-");
+
+	var monthNames = {
+		"01": "Jan",
+		"02": "Feb",
+		"03": "Mar",
+		"04": "Apr",
+		"05": "May",
+		"06": "Jun",
+		"07": "Jul",
+		"08": "Aug",
+		"09": "Sep",
+		"10": "Oct",
+		"11": "Nov",
+		"12": "Dec"
+	};
+
+	var dateString =
+		dateComponents[2] + " " +
+		monthNames[dateComponents[1]] + " " +
+		dateComponents[0];
+
+	return dateString;
+}
+
+// Builds the html for each briefing
+function createBriefingCard(title, url, date, description) {
+
+	// Build the title element
+	var titlePara =  document.createElement("p");
+	var titleAnchor = document.createElement("a");
+	var titleText =  document.createTextNode(title);
+	titleAnchor.setAttribute("href", url);
+	titleAnchor.appendChild(titleText);
+	titlePara.appendChild(titleAnchor);
+	titlePara.setAttribute("class", "title");
+
+	// Build the date element
+	var datePara = document.createElement("p");
+	var dateText = document.createTextNode(date);
+	datePara.appendChild(dateText);
+	datePara.setAttribute("class", "date");
+
+	// Build the descripion element
+	var descriptionPara = document.createElement("p");
+	var descriptionText = document.createTextNode(description);
+	descriptionPara.appendChild(descriptionText);
+	descriptionPara.setAttribute("class", "description");
+
+	// Build the card element
+	var card = document.createElement("div");
+	card.appendChild(titlePara);
+	card.appendChild(datePara);
+	card.appendChild(descriptionPara);
+	card.setAttribute("class", "card");
+
+	return card;
+}
+
+// The callback function that handles the returned json
+function handleBriefings(data) {
+
+	var briefings = data["result"]["items"];
+	var identifier, title, date, description, abstract;
+
+	for (var i=0; i < briefings.length; i++) {
+
+		var abstract = briefings[i]["abstract"]["_value"];
+
+		var title = briefings[i]["title"]
+		var date = convertDatetime(briefings[i]["date"]["_value"]);
+		var description = briefings[i]["description"][0];
+		var identifier = briefings[i]["identifier"]["_value"];
+		var url = "http://researchbriefings.parliament.uk/ResearchBriefing/Summary/" + identifier;
+
+		/*
+		console.log(title);
+		console.log(date);
+		console.log(description);
+		console.log(url)
+		console.log("")
+		*/
+		var card = createBriefingCard(title, url, date, description);
+		document.body.appendChild(card);
+	}
+}
+
+// The function that loads the data from the API
+function loadData() {
+
+	var search = getParameterByName("search");
+
+	if (search) {
+
+		var url = "http://lda.data.parliament.uk/researchbriefings.json?_where=?item%20dcterms:title%20?title.Filter%20regex(?title,%22(" + search + ")%22,%20%22i%22)&&_pageSize=50&_page=0&callback=handleBriefings";
+		document.getElementById("ddp").setAttribute("src", url);
+	}
+}
+
+</script>
+
+<script id="ddp" type="text/javascript"></script>
+
+<script type="text/javascript">
+loadData();
+</script>
+
+</body>
