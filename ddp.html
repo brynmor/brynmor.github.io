@@ -152,7 +152,7 @@ function handleBriefings(data) {
 		var date = convertDatetime(briefings[i]["date"]["_value"]);
 		var description = briefings[i]["description"][0];
 		var identifier = briefings[i]["identifier"]["_value"];
-		var url = "http://researchbriefings.parliament.uk/ResearchBriefing/Summary/" + identifier;
+		var url = "https://researchbriefings.parliament.uk/ResearchBriefing/Summary/" + identifier;
 
 		/*
 		console.log(title);
@@ -173,7 +173,7 @@ function loadData() {
 
 	if (search) {
 
-		var url = "http://lda.data.parliament.uk/researchbriefings.json?_where=?item%20dcterms:title%20?title.Filter%20regex(?title,%22(" + search + ")%22,%20%22i%22)&&_pageSize=50&_page=0&callback=handleBriefings";
+		var url = "https://lda.data.parliament.uk/researchbriefings.json?_where=?item%20dcterms:title%20?title.Filter%20regex(?title,%22(" + search + ")%22,%20%22i%22)&&_pageSize=50&_page=0&callback=handleBriefings";
 		document.getElementById("ddp").setAttribute("src", url);
 	}
 }
