@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angerstein Crossing Closure: useful documents
+title: Angerstein Crossing Closure - useful documents
 ---
 
 Angerstein Crossing: proposed closure
